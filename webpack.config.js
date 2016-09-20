@@ -1,6 +1,6 @@
 module.exports = {
   /* ビルドの起点となるファイルの設定 */
-  entry: './src/app.js',
+  entry: './src/app.jsx',
   /* 出力されるファイルの設定 */
   output: {
     path: './dist', // 出力先のパス
@@ -13,7 +13,7 @@ module.exports = {
     /* loaderの設定 */
     loaders: [
       {
-        test: /\.js$/, // 対象となるファイルの拡張子（正規表現可）
+        test: /\.js(x?)$/, // 対象となるファイルの拡張子（正規表現可）
         exclude: /node_modules/, // 除外するファイル/ディレクトリ（正規表現可）
         loader: 'babel-loader', // 使用するloader
       }
