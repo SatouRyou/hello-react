@@ -12,16 +12,7 @@ var HelloReact = React.createClass({
   }
 });
 
-var LikeButton = React.createClass( {
-  render() {
-    return (
-      <span>いいねボタン予定地</span>
-    );
-  }
-});
-
 ReactDOM.render(
   <HelloReact />,
-  <LikeButton />,
   document.querySelector(".content")
 );
